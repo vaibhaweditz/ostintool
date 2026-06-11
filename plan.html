@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OSTIN TOOL - Plans</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url('bg.jpg');
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    color:white;
+}
+
+.navbar{
+    padding:20px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,0.5);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid #00ff88;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#00ff88;
+}
+
+.user{
+    font-size:18px;
+    font-weight:bold;
+}
+
+.heading{
+    text-align:center;
+    margin-top:40px;
+    font-size:40px;
+    color:#00ff88;
+}
+
+.plan-container{
+    width:95%;
+    max-width:1200px;
+    margin:50px auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.plan-card{
+    width:340px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    padding:25px;
+    border:1px solid rgba(255,255,255,0.15);
+    box-shadow:0 0 20px rgba(0,255,136,0.15);
+}
+
+.plan-title{
+    text-align:center;
+    font-size:30px;
+    color:#00ff88;
+    margin-bottom:15px;
+}
+
+.price{
+    text-align:center;
+    font-size:35px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.features{
+    list-style:none;
+}
+
+.features li{
+    padding:10px 0;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.buy-btn{
+    display:block;
+    text-align:center;
+    text-decoration:none;
+    background:#00ff88;
+    color:black;
+    font-weight:bold;
+    padding:14px;
+    border-radius:12px;
+    margin-top:25px;
+}
+
+.buy-btn:hover{
+    transform:scale(1.03);
+}
+</style>
+
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo">OSTIN TOOL</div>
+    <div class="user">👤 Vaibhaw11</div>
+</div>
+
+<h1 class="heading">Choose Your Plan</h1>
+
+<div class="plan-container">
+
+    <!-- BASIC -->
+    <div class="plan-card">
+        <h2 class="plan-title">Basic</h2>
+        <div class="price">₹600</div>
+
+        <ul class="features">
+            <li>⏳ Time Limit - 3 Minutes</li>
+            <li>✅ Limited Tools</li>
+            <li>✅ Instagram Features</li>
+            <li>✅10 DAYS</li>
+        </ul>
+
+        <a href="payment.html" class="buy-btn">
+            BUY NOW
+        </a>
+    </div>
+
+    <!-- STANDARD -->
+    <div class="plan-card">
+        <h2 class="plan-title">Standard</h2>
+        <div class="price">₹1000</div>
+
+        <ul class="features">
+            <li>⏳ Time Limit - 5 to 10 Minutes</li>
+            <li>✅ All Instagram Features</li>
+            <li>✅ Snapchat Features</li>
+            <li>✅ Extra Standard Features</li>
+            <li>✅15 DAYS</li>
+        </ul>
+
+        <a href="payment.html" class="buy-btn">
+            BUY NOW
+        </a>
+    </div>
+
+    <!-- PREMIUM -->
+    <div class="plan-card">
+        <h2 class="plan-title">Premium</h2>
+        <div class="price">₹2000</div>
+
+        <ul class="features">
+            <li>⏳ Time Limit - 30 Minutes</li>
+            <li>✅ All Social Apps</li>
+            <li>✅ All Premium Features</li>
+            <li>✅ Full Access</li>
+            <li>✅20 DAYS</li>
+        </ul>
+
+        <a href="payment.html" class="buy-btn">
+            BUY NOW
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>

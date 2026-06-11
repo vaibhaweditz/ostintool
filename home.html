@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OSTIN TOOL - Home</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url('bg.jpg');
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    color:white;
+}
+
+.navbar{
+    width:100%;
+    padding:20px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,0.5);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid #00ff88;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#00ff88;
+}
+
+.user{
+    font-size:18px;
+    font-weight:bold;
+}
+
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:80px 20px;
+}
+
+.card{
+    width:100%;
+    max-width:600px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 0 25px rgba(0,255,136,0.2);
+}
+
+.card h2{
+    color:#00ff88;
+    margin-bottom:25px;
+}
+
+.info-box{
+    background:rgba(255,255,255,0.05);
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+.info-title{
+    font-size:14px;
+    color:#aaa;
+}
+
+.info-value{
+    font-size:20px;
+    margin-top:5px;
+    font-weight:bold;
+}
+
+.status{
+    color:#00ff88;
+}
+
+.buy-btn{
+    display:block;
+    width:100%;
+    text-align:center;
+    text-decoration:none;
+    background:#00ff88;
+    color:black;
+    font-weight:bold;
+    padding:15px;
+    border-radius:12px;
+    margin-top:25px;
+    transition:0.3s;
+}
+
+.buy-btn:hover{
+    transform:scale(1.03);
+}
+</style>
+
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo">OSTIN TOOL</div>
+    <div class="user">👤 Vaibhaw11</div>
+</div>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>Dashboard</h2>
+
+        <div class="info-box">
+            <div class="info-title">Username</div>
+            <div class="info-value">Vaibhaw11</div>
+        </div>
+
+        <div class="info-box">
+            <div class="info-title">Plan Mode</div>
+            <div class="info-value">Basic</div>
+        </div>
+
+        <div class="info-box">
+            <div class="info-title">Account Status</div>
+            <div class="info-value status">✅ Activated</div>
+        </div>
+
+        <a href="plan.html" class="buy-btn">
+            BUY PLAN
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
