@@ -93,6 +93,7 @@ select,input{
     border:none;
     border-radius:10px;
     margin-bottom:10px;
+    font-size:15px;
 }
 
 button{
@@ -150,64 +151,14 @@ button:hover{
 
 </div>
 
-<script type="module">
-
-import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
-import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js";
-
-const firebaseConfig = {
-  apiKey: "AIzaSyBNykKcPCVMsjLKNhlVXkkX9FslCWftsPI",
-  authDomain: "ostin-ca3e8.firebaseapp.com",
-  projectId: "ostin-ca3e8",
-  storageBucket: "ostin-ca3e8.firebasestorage.app",
-  messagingSenderId: "992405557523",
-  appId: "1:992405557523:web:d4c2ea40e5d86709958ae6",
-  measurementId: "G-XQ3GEM55TH"
-};
-
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
-
-window.submitPayment = async function(){
-
-    const plan = document.getElementById("plan").value;
-    const utr = document.getElementById("utr").value;
-
-    if(!plan || !utr){
-        alert("Please fill all fields.");
-        return;
-    }
-
-    try{
-
-        await addDoc(collection(db, "payments"), {
-            username: "Vaibhaw11",
-            plan: plan,
-            utr: utr,
-            status: "Pending",
-            date: new Date().toLocaleString()
-        });
-
-        alert("✅ Payment Submitted Successfully!\n\nKindly wait 15 minutes for verification.");
-
-        document.getElementById("plan").value = "";
-        document.getElementById("utr").value = "";
-
-    }catch(error){
-        alert("Error: " + error.message);
-    }
-
-}
-
-</script>
 <script>
 function submitPayment(){
 
-    const plan = document.getElementById("plan").value;
-    const utr = document.getElementById("utr").value;
+    var plan = document.getElementById("plan").value;
+    var utr = document.getElementById("utr").value;
 
     if(plan === "" || utr === ""){
-        alert("Please fill all fields.");
+        alert("Please select a plan and enter UTR number.");
         return;
     }
 
@@ -216,5 +167,6 @@ function submitPayment(){
     window.location.href = "home.html";
 }
 </script>
+
 </body>
 </html>
