@@ -200,6 +200,21 @@ window.submitPayment = async function(){
 }
 
 </script>
+<script>
+function submitPayment(){
 
+    const plan = document.getElementById("plan").value;
+    const utr = document.getElementById("utr").value;
+
+    if(plan === "" || utr === ""){
+        alert("Please fill all fields.");
+        return;
+    }
+
+    alert("✅ Payment Submitted Successfully!\n\nKindly wait for 15 minutes for verification.");
+
+    window.location.href = "home.html";
+}
+</script>
 </body>
 </html>
